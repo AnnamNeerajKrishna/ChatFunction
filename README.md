@@ -5,5 +5,7 @@ The Projects contains following functinality:\
                2 - Login Details \
                3 - To add Contact \
                4 - To Message\
-               5 - To Delete the Account\
-               6 - To Exit Without any Operation\
+               5 - To ViewMessages\
+               6 - To Delete the Account\
+               7 - To Display the clients present in server\
+               8 - To Exit Without any Operation\
