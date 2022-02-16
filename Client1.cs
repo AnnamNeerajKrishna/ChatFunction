@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace Client_Server_Communication
 {
-    public class Client
+    public class Client1
     {
         #region Client_creating
-         public List<Client> Contact_bookc1 = new List<Client>();
+         public List<Client1> Contact_bookc1 = new List<Client1>();
 
         string client_name;
          long ph_no;
         //long adhar_number;
-        public List<Client> Message;
+        public List<Client1> Message;
 
-        public Client(){
+        public Client1(){
             client_name = Client_name;
             ph_no = Ph_no;
           //  adhar_number = Adhar_number;
             }
-        public Client(string a,long b)
+        public Client1(string a,long b)
         {
             Client_name = a;
             Ph_no = b;
@@ -52,7 +52,7 @@ namespace Client_Server_Communication
 
         public static void TO_Send_Msg()
         {
-            Server sc2=new Server();
+            Server1 sc2=new Server1();
             Console.WriteLine("Please enter the User name that you want to add :");
 
             string ser_name = Console.ReadLine();

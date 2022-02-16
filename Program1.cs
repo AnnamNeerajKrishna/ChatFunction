@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Client_Server_Communication
 {
-    public  class Program
+    public  class Program1
     {
         // Server Object
-        public static Server sc = new Server();
+        public static Server1 sc = new Server1();
 
 
         public static file_data fd=new file_data();
@@ -118,7 +118,7 @@ namespace Client_Server_Communication
             Console.WriteLine("Enter the Phone Number");
             long ph_number=Convert.ToInt64(Console.ReadLine()); 
 
-            Client cls=new Client(user,ph_number);
+            Client1 cls=new Client1(user,ph_number);
             //Server Object
 
             if (sc.Check_Client(cls, sc.list))
@@ -142,7 +142,7 @@ namespace Client_Server_Communication
             long user_phone_number=Convert.ToInt64(Console.ReadLine());
 
             string user_phone = user_phone_number.ToString();
-            Client c3 = new Client(user_name, user_phone_number);//creating a new Client
+            Client1 c3 = new Client1(user_name, user_phone_number);//creating a new Client
 
             if (sc.Check_Client(c3, sc.list))//Checks weather a user exictes or not 
             {
@@ -171,7 +171,7 @@ namespace Client_Server_Communication
                     Console.WriteLine("Please Enter The Valid Phone_Number");
                 }
             }
-            c3.Message=new List<Client> ();
+            c3.Message=new List<Client1> ();
 
             #endregion
             //Console.WriteLine(n1.Check_ph_no(user_phone) ? "Valid Phone Number" : "Invalid Please Check it");

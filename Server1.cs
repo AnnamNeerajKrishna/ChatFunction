@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Client_Server_Communication
 {
-    public class Server
+    public class Server1
     {
         public file_data fd1=new file_data();
         #region server
-        public List<Client> list = new List<Client>();
+        public List<Client1> list = new List<Client1>();
 
        // Validity
-        public  bool Check_Client(Client cc1, List<Client> l1)
+        public  bool Check_Client(Client1 cc1, List<Client1> l1)
         {
             /*string s = "";
             using (StreamReader sr = File.OpenText(fd1.filename1))
@@ -57,13 +57,13 @@ namespace Client_Server_Communication
         // Adding contact to a client
         public void AddContact(string s1,long l1)
         {
-            Client cs2 = new Client();
+            Client1 cs2 = new Client1();
             string s2 = l1.ToString();
             New_Client_Reg n1=new New_Client_Reg();
             
             if (n1.Check_ph_no(s2))
             {
-                Client cs1 = new Client(s1, l1);
+                Client1 cs1 = new Client1(s1, l1);
                 if(!Check_Client(cs1,cs2.Contact_bookc1))
                 cs2.Contact_bookc1.Add(cs1);
                 list.Add(cs2);
@@ -89,7 +89,7 @@ namespace Client_Server_Communication
             string user_name=Console.ReadLine();
             Console.WriteLine("Enter the Phone Number");
             long ph_num=Convert.ToInt64(Console.ReadLine());
-            Client cls1=new Client(user_name,ph_num);
+            Client1 cls1=new Client1(user_name,ph_num);
             foreach(var x in list.ToArray())
             {
                 if(x.Ph_no==cls1.Ph_no && x.Client_name == cls1.Client_name)
@@ -154,7 +154,7 @@ namespace Client_Server_Communication
 
         public void viewMessage()
         {
-            string currt_user = $"E:\\{Program.active_user}message.txt";
+            string currt_user = $"E:\\{Program1.active_user}message.txt";
             using (StreamReader sr = File.OpenText(currt_user))
             {
                 string s = "";
