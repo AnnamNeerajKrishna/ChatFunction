@@ -11,7 +11,7 @@ namespace Client_Server_Communication
     public class Client
     {
         #region Client_creating
-        // public List<Client_Server> Contact_bookc1 = new List<Client_Server>();
+         public List<Client> Contact_bookc1 = new List<Client>();
 
         string client_name;
          long ph_no;
@@ -59,7 +59,7 @@ namespace Client_Server_Communication
         }
     }
    
-    public class message
+  /*  public class message
     {
         #region Message Class
        
@@ -87,7 +87,7 @@ namespace Client_Server_Communication
             }
         }
         #endregion
-    }
+    }*/
 
     public class New_Client_Reg
     {
